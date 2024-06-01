@@ -1,0 +1,9 @@
+../Core/Src/main.c:168:6:SystemClock_Config	88	static,ignoring_inline_asm
+../Core/Src/main.c:359:6:GPIO_Poll	24	static
+../Core/Src/main.c:379:6:DPAD_Poll	24	static
+../Core/Src/main.c:439:6:Draw_Buttons	4	static
+../Core/Src/main.c:443:6:Draw_DPAD	8	static
+../Core/Src/main.c:431:6:DrawAll	16	static
+../Core/Src/main.c:85:5:main	64	static,ignoring_inline_asm
+../Core/Src/main.c:487:10:FilterWindow	8	static
+../Core/Src/main.c:515:6:Error_Handler	0	static,ignoring_inline_asm

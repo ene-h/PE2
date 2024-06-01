@@ -1,0 +1,16 @@
+.ECS-80-18-5PX-GM-TR :1 ;Crystals 8.000 MHz 18 pF CSM-7X +/-30/30 ppm -20 - +70C RoHS
+ECS80185PXGMTR
+*STM Y
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN ECS-80-18-5PX-GM-TR
+~!Mouser Part Number (520-80-18-5PX-GM-TR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ECS/ECS-80-18-5PX-GM-TR?qs=amGC7iS6iy9i4EiBY7c3iQ%3D%3D)
+~!Manufacturer_Name (ECS)
+~!Manufacturer_Part_Number (ECS-80-18-5PX-GM-TR)
+~!Link Datasheet (https://ecsxtal.com/store/pdf/csm-7x.pdf)
+~!Height (4.3mm)
+~!3D_Model (ECS-80-18-5PX-GM-TR)
+ECS-80-18-5PX-GM-TR
+1.1!U 2.1!U 

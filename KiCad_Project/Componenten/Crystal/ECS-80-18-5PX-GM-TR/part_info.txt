@@ -1,0 +1,9 @@
+Manufacturer=ECS
+PartNumber=ECS-80-18-5PX-GM-TR
+PartCategory=Crystal or Oscillator
+PackageCategory=Other
+PinCount=2
+Version=1.3
+Released=2023-04-19 10:16:12
+Downloaded=2024-03-21 18:54:44
+3D=Y
