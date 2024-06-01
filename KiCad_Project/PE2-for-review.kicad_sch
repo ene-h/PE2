@@ -5403,6 +5403,18 @@
 		(uuid 1408526a-4cb8-4f07-8c4f-c6337d8778fa)
 	)
 	(rectangle
+		(start 200.66 134.62)
+		(end 238.76 163.83)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 357ad99c-9eb5-4942-8795-2b408a33aded)
+	)
+	(rectangle
 		(start 13.97 165.1)
 		(end 116.84 191.77)
 		(stroke
@@ -5483,6 +5495,16 @@
 			)
 		)
 		(uuid "08a11304-bd16-4274-8be7-075818fcf410")
+	)
+	(text "Display\n"
+		(exclude_from_sim no)
+		(at 244.856 161.544 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0aecf8b5-470e-441f-a360-52890963bd32")
 	)
 	(text "MCU STM32F446RCT6\n"
 		(exclude_from_sim no)
