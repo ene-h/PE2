@@ -148,7 +148,7 @@ int main(void)
 #endif
 	  			uint8_t errrr = USBD_HID_SendReport(&hUsbDeviceFS, (uint8_t*) &report_data, (2 * AXIS_NUM + 2 * BUTTONS_ENABLED + 1)*sizeof(uint8_t));
 	  			if (errrr == 3) {
-	  				HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, 0);
+	  				HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, 0); //LED licht op wanneer de USB lib een error returnt (als de polling niet kan bijhouden)
 	  				HAL_Delay(500);
 				} else {
 					HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, 1);
@@ -249,7 +249,7 @@ static void MX_I2C3_Init(void)
 
   /* USER CODE END I2C3_Init 1 */
   hi2c3.Instance = I2C3;
-  hi2c3.Init.ClockSpeed = 1500000;
+  hi2c3.Init.ClockSpeed = 800000;
   hi2c3.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c3.Init.OwnAddress1 = 0;
   hi2c3.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
@@ -446,12 +446,12 @@ void Draw_Buttons(uint8_t* button_state) {
 	((*button_state & (0x1 << 6)) ? ssd1306_FillCircle : ssd1306_DrawCircle)(95, 28, 7, White); //HK
 	((*button_state & (0x1 << 7)) ? ssd1306_FillCircle : ssd1306_DrawCircle)(111, 28, 7, White); //EXK
 
-
+//knoppen worden als volle of holle cirkels afgdrukt op basis van hun status (ingedrukt of niet)
 	return;
 }
 void Draw_DPAD(uint8_t* dpad_state) {
-	ssd1306_DrawCircle(56, 52, 9, White);
-	ssd1306_DrawCircle(17, 16, 7, White);
+	ssd1306_DrawCircle(56, 52, 9, White); //knoppen worden als volle of holle cirkels afgdrukt op basis van hun status (ingedrukt of niet) 
+	ssd1306_DrawCircle(17, 16, 7, White); //(ook de SOCD cleaning wordt getoond doordat we de dpad_state gebruiken)
 	ssd1306_DrawCircle(33, 16, 7, White);
 	ssd1306_DrawCircle(48, 22, 7, White);
 	switch (*dpad_state) {
